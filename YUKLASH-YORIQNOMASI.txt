@@ -1,0 +1,18 @@
+ADOLAT — GITHUB PAGES UCHUN TAYYOR SAYT
+
+1. GitHub’da marufovv/adolato repository’ni oching.
+2. Eski sayt fayllarini o‘chiring.
+3. Ushbu ZIP ichidagi BARCHA fayl va papkalarni repository’ning asosiy qismiga yuklang.
+   Muhim: faqat ZIP faylning o‘zini yuklamang — avval uni oching.
+4. Commit changes tugmasini bosing.
+5. Settings → Pages bo‘limida:
+   Source: Deploy from a branch
+   Branch: main
+   Folder: / (root)
+6. Save tugmasini bosing va 2–5 daqiqa kuting.
+
+Sayt manzili o‘zgarmaydi:
+https://marufovv.github.io/adolato/
+
+.nojekyll faylini o‘chirmang. U _next papkasidagi sayt fayllari GitHub Pages’da
+to‘g‘ri ishlashi uchun kerak.
