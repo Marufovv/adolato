@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="ADOLAT — O‘zbekiston fuqarolari uchun bepul, maxfiy va amaliy huquqiy yo‘l-yo‘riq, murojaat hujjati va muddat kuzatuvchisi.">
+  <meta name="theme-color" content="#0b4f6c">
+  <meta property="og:title" content="ADOLAT — huquqiy yordamchi">
+  <meta property="og:description" content="Muammodan qonuniy asoslangan harakat rejasi va tayyor hujjatgacha.">
+  <meta property="og:type" content="website">
+  <title>ADOLAT — Huquqiy yordamchi</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"ADOLAT","applicationCategory":"LegalService","inLanguage":"uz","isAccessibleForFree":true}</script>
+</head>
+<body>
+  <section id="auth-gate" class="auth-gate" aria-labelledby="auth-title">
+    <div class="auth-visual" aria-hidden="true"><div class="auth-lines"></div><div class="auth-quote"><span>ADOLAT</span><p data-i18n="authMotto">Huquqingizni bilish — uni himoya qilishning birinchi qadami.</p></div></div>
+    <div class="auth-panel">
+      <div class="auth-language"><label for="auth-lang" data-i18n="language">Til</label><select id="auth-lang" class="language-select"><option value="uz">O‘zbekcha</option><option value="ru">Русский</option><option value="en">English</option><option value="kaa">Qaraqalpaqsha</option></select></div>
+      <form id="register-form" class="register-card">
+        <img class="auth-logo" src="assets/images/adolat-logo.png" width="444" height="404" alt="ADOLAT logotipi">
+        <p class="auth-kicker" data-i18n="secureAccess">Xavfsiz kirish</p>
+        <h1 id="auth-title" data-i18n="welcome">ADOLAT’ga xush kelibsiz</h1>
+        <p class="auth-intro" data-i18n="registerIntro">Huquqiy yordamdan foydalanish uchun profilingizni yarating. Ma’lumotlar faqat shu qurilmada saqlanadi.</p>
+        <div class="auth-name-grid"><label><span data-i18n="firstName">Ism</span><input id="reg-first-name" name="firstName" autocomplete="given-name" required minlength="2" placeholder="Aziz"></label><label><span data-i18n="lastName">Familiya</span><input id="reg-last-name" name="lastName" autocomplete="family-name" required minlength="2" placeholder="Karimov"></label></div>
+        <label><span data-i18n="phone">Telefon raqami</span><div class="phone-field"><b>+998</b><input id="reg-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" required maxlength="12" placeholder="90 123 45 67"></div></label>
+        <label class="consent"><input id="reg-consent" type="checkbox" required><span data-i18n="consent">Ma’lumotlar shu qurilmada saqlanishiga roziman.</span></label>
+        <button class="button auth-submit" type="submit"><span data-i18n="continue">Davom etish</span><span>→</span></button>
+        <div class="auth-security"><span>🔒</span><p><strong data-i18n="privateTitle">Maxfiy va xavfsiz</strong><small data-i18n="privateText">Serverga shaxsiy ma’lumot yuborilmaydi.</small></p></div>
+      </form>
+    </div>
+  </section>
+  <a class="skip-link" href="#assistant">Asosiy yordamchiga o‘tish</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ADOLAT bosh sahifa"><img src="assets/images/adolat-logo.png" width="44" height="40" alt=""><strong>ADOLAT</strong><small data-i18n="legalAssistant">huquqiy yordamchi</small></a>
+    <nav aria-label="Asosiy menyu"><a href="#assistant" data-i18n="assistant">Yordamchi</a><a href="#knowledge" data-i18n="legalBase">Huquqiy baza</a><a href="#cases" data-i18n="myCases">Murojaatlarim</a></nav>
+    <div class="header-trust"><span>🔒 Qurilmada saqlanadi</span><span>✓ Rasmiy manbalar</span></div>
+    <select id="site-lang" class="language-select header-language" aria-label="Til"><option value="uz">UZ</option><option value="ru">RU</option><option value="en">EN</option><option value="kaa">QAA</option></select>
+    <button id="profile-button" class="profile-button" type="button"><span id="profile-avatar">A</span><span id="profile-name">Profil</span></button>
+    <button id="theme-toggle" class="icon-button" type="button" aria-label="Qorong‘i rejimni yoqish" title="Ko‘rinishni almashtirish">◐</button>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div>
+        <p class="eyebrow" data-i18n="heroEyebrow">O‘zbekiston uchun raqamli huquqiy yordamchi</p>
+        <h1><span data-i18n="heroTitle">Muammoni tushuning.</span><br><em data-i18n="heroAccent">Keyingi qadamni biling.</em></h1>
+        <p class="lead" data-i18n="heroLead">4 qisqa bosqichda qonuniy asos, murojaat manzili va yuklab olinadigan tayyor hujjat oling.</p>
+        <div class="hero-actions"><a class="button primary" href="#assistant"><span data-i18n="getHelp">Yordam olish</span> <span>→</span></a><a class="button secondary" href="#how" data-i18n="howWorks">Qanday ishlaydi?</a></div>
+      </div>
+      <aside class="hero-card" aria-label="ADOLAT afzalliklari">
+        <span class="status"><i></i> Yordamchi tayyor</span>
+        <h2 data-i18n="realResult">Natija — shunchaki maslahat emas</h2>
+        <ul><li>Modda va rasmiy manba</li><li>Idora va yuborish tartibi</li><li>DOC va chop etiladigan PDF</li><li>Muddat eslatmasi</li></ul>
+      </aside>
+    </section>
+
+    <section id="assistant" class="assistant-section wrap" aria-labelledby="assistant-title">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="legalSolution">Huquqiy yechim</p><h2 id="assistant-title" data-i18n="fromCaseToPlan">Vaziyatingizdan aniq rejagacha</h2></div><button id="reset-flow" class="text-button" type="button" data-i18n="restart">Qayta boshlash</button></div>
+      <div class="assistant-shell">
+        <div class="progress-wrap" aria-label="Jarayon holati"><div class="progress-copy"><strong id="progress-label">1-bosqich / 4</strong><span id="progress-remaining">3 bosqich qoldi</span></div><div class="progress-track"><span id="progress-bar"></span></div><ol class="step-dots"><li class="active">Yo‘nalish</li><li>Vaziyat</li><li>Dalillar</li><li>Natija</li></ol></div>
+        <form id="legal-flow" novalidate>
+          <section class="flow-step active" data-step="1"><h3 data-i18n="chooseCategory">Muammo yo‘nalishini tanlang</h3><p data-i18n="chooseClosest">Vaziyatingizga eng yaqin mavzuni belgilang.</p><div id="category-grid" class="choice-grid"></div></section>
+          <section class="flow-step" data-step="2" hidden><h3 data-i18n="describeCase">Vaziyatni qisqacha yozing</h3><p data-i18n="deviceOnlyLong">Ma’lumot serverga yuborilmaydi va faqat qurilmada qoladi.</p><div class="form-grid"><label><span data-i18n="fullName">F.I.Sh.</span><input id="full-name" autocomplete="name"></label><label><span data-i18n="otherParty">Qarshi tomon yoki tashkilot</span><input id="counterparty"></label><label><span data-i18n="eventDate">Voqea sanasi</span><input id="event-date" type="date"></label><label class="wide"><span data-i18n="whatHappened">Nima bo‘ldi?</span><textarea id="situation" rows="6" required minlength="15"></textarea><small data-i18n="minChars">Kamida 15 belgi.</small></label></div></section>
+          <section class="flow-step" data-step="3" hidden><h3 data-i18n="evidenceTitle">Qaysi dalillaringiz bor?</h3><p data-i18n="evidenceText">Borlarini belgilang — hujjatga ilova ro‘yxati qo‘shiladi.</p><div id="evidence-grid" class="check-grid"></div><label class="wide"><span data-i18n="extraEvidence">Qo‘shimcha dalil</span><input id="extra-evidence"></label></section>
+          <section class="flow-step" data-step="4" hidden><div id="result" aria-live="polite"></div></section>
+          <div class="flow-actions"><button id="prev-step" class="button secondary" type="button" hidden>← Orqaga</button><button id="draft-doc" class="button secondary" type="button" hidden>Tayyor murojaat matni</button><button id="next-step" class="button primary" type="button">Davom etish →</button></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="how" class="how wrap"><p class="eyebrow">Qanday ishlaydi?</p><h2>Murakkab yo‘lni to‘rtta sodda qadamga ajratdik</h2><div class="how-grid"><article><b>01</b><h3>Yo‘nalishni tanlang</h3><p>Muammoga mos huquq sohasi aniqlanadi.</p></article><article><b>02</b><h3>Vaziyatni yozing</h3><p>Oddiy tilda asosiy holatlarni kiriting.</p></article><article><b>03</b><h3>Dalillarni belgilang</h3><p>Mavjud hujjat va isbotlarni jamlang.</p></article><article><b>04</b><h3>Amaliy natija oling</h3><p>Reja, manzil, hujjat va muddat bir joyda.</p></article></div></section>
+
+    <section id="knowledge" class="knowledge wrap"><div class="section-heading"><div><p class="eyebrow">Huquqiy baza</p><h2>Ko‘p uchraydigan vaziyatlar</h2></div><p>Manbalar havolasi rasmiy LexUZ hujjatiga olib boradi.</p></div><div id="article-grid" class="article-grid"></div></section>
+
+    <section id="cases" class="cases wrap"><div class="section-heading"><div><p class="eyebrow">Faqat shu qurilmada</p><h2>Murojaatlarim</h2></div><button id="clear-cases" class="text-button danger" type="button">Barchasini o‘chirish</button></div><div id="case-list" class="case-list"></div></section>
+  </main>
+
+  <div class="trust-bar" role="status"><span>🔒 Ma’lumot faqat qurilmada saqlanadi</span><span>✓ Rasmiy manbalar asosida</span></div>
+  <dialog id="document-dialog" class="document-dialog"><div class="dialog-head"><div><p class="eyebrow">Tayyor natija</p><h2>Murojaat matni</h2></div><button id="close-dialog" class="icon-button" type="button" aria-label="Yopish">×</button></div><p class="dialog-note">Matn kiritgan ma’lumotlaringiz asosida tuzildi. Yuborishdan oldin bo‘sh joylar va faktlarni tekshiring.</p><pre id="dialog-document" class="document-preview"></pre><div class="result-actions"><button id="copy-document" class="button primary" type="button">Matnni ko‘chirish</button><button id="dialog-pdf" class="button secondary" type="button">PDF yuklash</button><button id="dialog-doc" class="button secondary" type="button">Word .doc</button></div></dialog>
+  <dialog id="profile-dialog" class="profile-dialog"><div class="dialog-head"><div><p class="eyebrow" data-i18n="profile">Profil</p><h2 id="profile-full-name">Foydalanuvchi</h2></div><button id="close-profile" class="icon-button" type="button" aria-label="Yopish">×</button></div><div class="profile-info"><span id="profile-large-avatar">A</span><div><strong id="profile-phone">+998</strong><p data-i18n="storedDevice">Ma’lumotlar shu qurilmada saqlangan</p></div></div><button id="logout-button" class="button secondary danger" type="button" data-i18n="logout">Profildan chiqish</button></dialog>
+  <footer><div class="wrap"><strong>ADOLAT — Huquqiy yordamchi</strong><p>Umumiy yo‘l-yo‘riq beradi, advokat xulosasi o‘rnini bosmaydi. Qonunlar o‘zgarishi mumkin — murojaatdan oldin rasmiy manbani tekshiring.</p><span>© 2026 ADOLAT</span></div></footer>
+  <script src="assets/js/content.js" defer></script>
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
